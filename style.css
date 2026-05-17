@@ -1,5 +1,45 @@
-.center {
+/* Style global pour le texte */
+body {
+  font-family: serif; /* Pour garder l'esprit "mémoire" */
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Section titre */
+.header-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Aligne titre et sous-titre verticalement */
   align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Section des liens (la discographie) */
+.discography {
+  display: flex;
+  flex-direction: column; /* FORCER LE PASSAGE À LA LIGNE */
+  align-items: center;    /* CENTRER HORIZONTALEMENT */
+  gap: 15px;             /* ESPACE ENTRE CHAQUE LIEN (remplace les <br>) */
+}
+
+/* Style des liens */
+.discography a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.discography a:hover {
+  border-bottom: 1px solid #000;
+  color: #666;
+}
+
+/* Lecteur audio */
+.audio-player {
+  margin-top: 20px;
+  text-align: center;
 }
