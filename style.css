@@ -28,6 +28,9 @@
   color: #666; /* Petit effet au survol */
 }
 
+h2 {text-align: center;}
+p2 {text-align: center;}
+
 /* Style pour le bloc audio */
 .audio-block {
   display: flex;
