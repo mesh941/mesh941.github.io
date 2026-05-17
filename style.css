@@ -1,45 +1,37 @@
-/* Style global pour le texte */
-body {
-  font-family: serif; /* Pour garder l'esprit "mémoire" */
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 40px;
-}
-
-/* Section titre */
+/* Centrage du Titre et Sous-titre */
 .header-section {
   display: flex;
-  flex-direction: column; /* Aligne titre et sous-titre verticalement */
+  flex-direction: column; /* Aligne les éléments verticalement (l'un sous l'autre) */
+  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  text-align: center;
+  text-align: center;     /* Assure que le texte lui-même est centré */
+  margin-top: 50px;
+  margin-bottom: 50px;    /* Espace sous le bloc de titre */
 }
 
-/* Section des liens (la discographie) */
-.discography {
+/* Gestion des liens et de l'espacement */
+.links-container {
   display: flex;
-  flex-direction: column; /* FORCER LE PASSAGE À LA LIGNE */
-  align-items: center;    /* CENTRER HORIZONTALEMENT */
-  gap: 15px;             /* ESPACE ENTRE CHAQUE LIEN (remplace les <br>) */
+  flex-direction: column; /* Met chaque lien sur une nouvelle ligne */
+  align-items: center;    /* Centre les liens horizontalement */
+  gap: 25px;             /* C'EST ICI que tu règles l'espace entre chaque ligne */
 }
 
-/* Style des liens */
-.discography a {
+/* Style des liens pour enlever le soulignement bleu par défaut */
+.links-container a {
   text-decoration: none;
-  color: #000;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s;
+  color: black;
+  font-size: 1.1em;
 }
 
-.discography a:hover {
-  border-bottom: 1px solid #000;
-  color: #666;
+.links-container a:hover {
+  color: #666; /* Petit effet au survol */
 }
 
-/* Lecteur audio */
-.audio-player {
-  margin-top: 20px;
-  text-align: center;
+/* Style pour le bloc audio */
+.audio-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
 }
