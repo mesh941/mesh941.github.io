@@ -29,7 +29,8 @@
 }
 
 h2 {text-align: center; margin-bottom: 20px;}
-p2 {text-align: center;}
+p2 {text-align: center; margin-top: 5px;
+  margin-bottom: 5px;}
 
 /* Style pour le bloc audio */
 .audio-block {
